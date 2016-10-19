@@ -43,9 +43,7 @@
 (define (symbolic-cell _)
   (apply choose* possible-entries))
 
-; Accessing the rows, columns and boxes of a board
-;----------------------------------------------------------------------
-
+; For accessing rows/columns/boxes of a board:
 ; We just use array index arithmetic. Since the board size is concrete,
 ; this is all concrete computation, and therefore has no impact on the
 ; performance of the solver, so we can do the easy thing.
@@ -80,6 +78,8 @@
         cells
         (+ (* box-size br) ir)
         (+ (* box-size bc) ic)))))
+
+;----------------------------------------------------------------------
 
 ; Whether the given board (as a list of symbols) is solved.
 ; (listof symbol?) -> boolean?
