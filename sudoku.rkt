@@ -79,8 +79,6 @@
         (+ (* box-size br) ir)
         (+ (* box-size bc) ic)))))
 
-;----------------------------------------------------------------------
-
 ; Whether the given board (as a list of symbols) is solved.
 ; (listof symbol?) -> boolean?
 (define (board-solved? cells)
