@@ -131,7 +131,7 @@
   (define soln (time
     (solve
       (begin
-        ; some constraint on the hints, can try different things here. on 2x2 4 is the smallest p
+        ; our design constraint
         (assert (<= (count identity hints) max-desired-hints))
         ; primary solution should actually be a solution
         (assert (board-solved? cells))
